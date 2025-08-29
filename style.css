@@ -9,11 +9,11 @@ body {
     line-height: 1.8;
     background-color: #f9e3e8; /* Rosa bem clarinho */
     color: #4f4f4f; /* Cor do texto */
-    text-align: center; /* Centralizar o conteúdo por padrão */
+    text-align: center;
 }
 
 header {
-    background-color: #f1c6d3; /* Nude mais puxado para o rosa */
+    background: linear-gradient(45deg, #f1c6d3, #fbd2e0); /* Degradê do rosa para o rosa mais claro */
     color: #fff;
     padding: 20px;
     display: flex;
@@ -26,7 +26,7 @@ header {
 }
 
 header .logo h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -43,106 +43,42 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-weight: 600;
 }
 
 header nav ul li a:hover {
-    color: #ff99cc; /* Cor do hover */
+    text-decoration: underline;
 }
 
-.hero {
-    background-color: #fbd2e0; /* Rosa suave */
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.hero p {
-    font-size: 1.3rem;
-    color: #666;
-    margin-top: 20px;
-}
-
-.grid-imagens {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+section {
     padding: 40px 20px;
+    margin: 20px 0;
 }
 
-.imagem-item {
-    width: 280px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    transition: transform 0.3s ease;
-    text-align: center;
-}
-
-.imagem-item:hover {
-    transform: scale(1.05);
-}
-
-.imagem-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.imagem-item h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.imagem-item p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.5;
-}
-
-.detalhes {
-    padding: 40px 20px;
-    background-color: #fff;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.detalhes h2 {
+h2 {
     font-size: 2rem;
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.detalhes p {
+p {
     font-size: 1.2rem;
     color: #666;
-    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.detalhes ul {
-    list-style-type: disc;
-    margin-left: 20px;
+ul {
     font-size: 1.1rem;
+    color: #666;
+    text-align: left;
 }
 
-.detalhes ul li {
+ul li {
     margin-bottom: 10px;
 }
 
 footer {
-    background-color: #f1c6d3; /* Nude mais puxado para o rosa */
+    background-color: #f1c6d3;
     color: #fff;
     text-align: center;
     padding: 20px;
