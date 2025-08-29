@@ -7,15 +7,15 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.8;
-    background-color: #f9e3e8; /* Rosa bem clarinho */
-    color: #4f4f4f; /* Cor do texto */
+    background-color: #f4f4f4; /* Cor de fundo neutra */
+    color: #333; /* Cor do texto */
     text-align: center;
     padding-top: 80px; /* Para dar espaço para o cabeçalho que vai desaparecer */
 }
 
 header {
-    background: linear-gradient(45deg, #f1c6d3, #fbd2e0); /* Degradê do rosa para o rosa mais claro */
-    color: #fff;
+    background: linear-gradient(45deg, #c0c0c0, #e0e0e0); /* Degradê de cinza suave */
+    color: #333; /* Cor do texto no cabeçalho */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600;
@@ -80,9 +80,33 @@ ul li {
     margin-bottom: 10px;
 }
 
+.grid-imagens {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.imagem-item {
+    text-align: center;
+    width: 23%;
+}
+
+.imagem-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
 footer {
-    background-color: #f1c6d3;
-    color: #fff;
+    background-color: #e0e0e0; /* Cor de fundo do rodapé */
+    color: #333; /* Cor do texto */
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -90,4 +114,13 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
