@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="logo">
             <h1>Fisioterapia & Bem-estar</h1>
         </div>
@@ -22,12 +22,12 @@
             </ul>
         </nav>
     </header>
-    
+
     <section class="hero" id="inicio">
         <h2>Transforme sua saúde com a fisioterapia</h2>
         <p>A fisioterapia é uma prática essencial para o cuidado do corpo, ajudando na prevenção e recuperação de lesões, além de promover o bem-estar.</p>
     </section>
-    
+
     <section class="grid-imagens" id="tratamentos">
         <div class="imagem-item">
             <img src="https://via.placeholder.com/400x300" alt="Fisioterapia Ortopédica">
@@ -54,68 +54,43 @@
     <section class="detalhes" id="exercicios">
         <h2>Exercícios de Reabilitação</h2>
         <p>A reabilitação física envolve exercícios específicos para melhorar a força, a flexibilidade e a mobilidade. Esses exercícios são fundamentais no processo de recuperação de lesões musculares, articulares e pós-cirúrgicas.</p>
-        <p>Alguns tipos de exercícios incluem:</p>
-        <ul>
-            <li>Exercícios de fortalecimento muscular para aumentar a resistência.</li>
-            <li>Exercícios de mobilidade articular para recuperar a amplitude de movimento.</li>
-            <li>Exercícios de equilíbrio e coordenação para prevenir quedas.</li>
-        </ul>
     </section>
 
     <section class="detalhes" id="dicas">
         <h2>Dicas de Saúde</h2>
         <p>Manter um estilo de vida saudável é essencial para prevenir lesões e melhorar a qualidade de vida. Aqui estão algumas dicas que podem ajudar:</p>
-        <ul>
-            <li>Pratique atividades físicas regularmente para manter o corpo em movimento.</li>
-            <li>Adote uma dieta equilibrada, rica em nutrientes essenciais.</li>
-            <li>Realize alongamentos para evitar tensões musculares e melhorar a flexibilidade.</li>
-            <li>Evite sobrecarga nas articulações e pratique exercícios de fortalecimento muscular para prevenir lesões.</li>
-        </ul>
     </section>
 
     <section class="detalhes" id="como-ingressar">
         <h2>Como Ingressar na Fisioterapia</h2>
         <p>Ingressar na área de fisioterapia é uma excelente opção para quem deseja trabalhar com saúde e bem-estar. Para seguir essa carreira, é necessário:</p>
-        <ul>
-            <li><strong>Escolher um Curso de Graduação:</strong> O primeiro passo é ingressar em uma faculdade de Fisioterapia, que tem duração de 4 a 5 anos. É importante procurar por instituições reconhecidas pelo MEC.</li>
-            <li><strong>Estágio Supervisionado:</strong> Durante o curso, o estudante realizará estágios supervisionados, onde colocará a teoria em prática e aprenderá com profissionais experientes.</li>
-            <li><strong>Formação e Registro:</strong> Após concluir o curso, o formando deve obter o registro no Conselho Regional de Fisioterapia e Terapia Ocupacional (CREFITO) para atuar na área.</li>
-            <li><strong>Especializações:</strong> Após a graduação, é possível fazer especializações em diversas áreas, como ortopedia, neurologia, cardiologia, entre outras.</li>
-        </ul>
-        <p>Após o processo de formação, o fisioterapeuta pode atuar em clínicas, hospitais, academias, ou mesmo de forma autônoma, ajudando pacientes a se recuperarem de lesões ou melhorarem sua qualidade de vida.</p>
     </section>
 
     <section class="detalhes" id="salarios-oportunidades">
         <h2>Salários e Oportunidades na Fisioterapia</h2>
-        <p>O salário de um fisioterapeuta pode variar de acordo com a região, a especialização e a experiência do profissional. No entanto, alguns dados podem servir como referência:</p>
-        <ul>
-            <li><strong>Fisioterapeuta Recém-Formado:</strong> Geralmente, o valor inicial pode ser em torno de R$ 2.500 a R$ 3.500 mensais, dependendo da localização e do tipo de serviço (clínica, hospital, etc.).</li>
-            <li><strong>Fisioterapeuta com Experiência:</strong> Com alguns anos de experiência, o salário pode variar entre R$ 4.000 e R$ 6.000 mensais, especialmente se o profissional atuar em clínicas renomadas ou hospitais de grande porte.</li>
-            <li><strong>Especializações:</strong> Profissionais que se especializam em áreas como fisioterapia esportiva, neurologia ou ortopedia, podem alcançar salários ainda mais altos. Nesses casos, os valores podem ser superiores a R$ 7.000 mensais.</li>
-        </ul>
-        <p>Além disso, fisioterapeutas autônomos ou com clínicas próprias podem ter rendimentos superiores, dependendo da demanda e da sua clientela. A remuneração é variável e depende muito do esforço individual, localização e especialização.</p>
+        <p>O salário de um fisioterapeuta pode variar de acordo com a região, a especialização e a experiência do profissional.</p>
     </section>
-    
+
     <footer>
         <p>&copy; 2025 Fisioterapia & Bem-estar - Todos os direitos reservados</p>
     </footer>
 
     <script>
-        window.onscroll = function() {
-            stickyHeader();
-        };
+        let lastScrollTop = 0;
+        const header = document.getElementById("header");
 
-        var header = document.querySelector("header");
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-        var sticky = header.offsetTop;
-
-        function stickyHeader() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
+            // Se o usuário rolou para baixo e passou do topo, escondemos o cabeçalho
+            if (currentScroll > lastScrollTop) {
+                header.style.top = "-100px"; // Cabeçalho desaparece
             } else {
-                header.classList.remove("sticky");
+                // Se o usuário rolou para cima, mostramos o cabeçalho
+                header.style.top = "0"; // Cabeçalho reaparece
             }
-        }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para garantir que o valor não seja negativo
+        });
     </script>
 </body>
 </html>

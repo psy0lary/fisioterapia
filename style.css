@@ -10,6 +10,7 @@ body {
     background-color: #f9e3e8; /* Rosa bem clarinho */
     color: #4f4f4f; /* Cor do texto */
     text-align: center;
+    padding-top: 80px; /* Para dar espaço para o cabeçalho que vai desaparecer */
 }
 
 header {
@@ -19,15 +20,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
-    text-align: left;
-    transition: background 0.3s ease-in-out;
-}
-
-header.sticky {
-    background: linear-gradient(45deg, #f1a9c5, #f6c8d5); /* Cor mais escura quando rolar */
+    transition: top 0.3s ease-in-out;
 }
 
 header .logo h1 {
