@@ -7,15 +7,15 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.8;
-    background-color: #f4f4f4; /* Cor de fundo neutra */
-    color: #333; /* Cor do texto */
+    background-color: #f5f9fb; /* Fundo suave e claro, com uma tonalidade neutra e calma */
+    color: #333; /* Cor de texto mais escura para boa legibilidade */
     text-align: center;
-    padding-top: 80px; /* Para dar espaço para o cabeçalho que vai desaparecer */
+    padding-top: 80px; /* Para dar espaço ao cabeçalho */
 }
 
 header {
-    background: linear-gradient(45deg, #c0c0c0, #e0e0e0); /* Degradê de cinza suave */
-    color: #333; /* Cor do texto no cabeçalho */
+    background: linear-gradient(45deg, #7ed4d7, #85c0b0); /* Degradê de azul claro e verde suave */
+    color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -31,6 +31,7 @@ header {
 header .logo h1 {
     font-size: 2.5rem;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 
 header nav ul {
@@ -39,14 +40,15 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 header nav ul li a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 header nav ul li a:hover {
@@ -54,20 +56,21 @@ header nav ul li a:hover {
 }
 
 section {
-    padding: 40px 20px;
+    padding: 50px 20px;
     margin: 20px 0;
 }
 
 h2 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 2.3rem;
+    color: #34495e; /* Azul mais escuro */
     margin-bottom: 20px;
 }
 
 p {
     font-size: 1.2rem;
-    color: #666;
+    color: #555;
     margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 ul {
@@ -83,7 +86,7 @@ ul li {
 .grid-imagens {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .imagem-item {
@@ -95,21 +98,27 @@ ul li {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais forte para as imagens */
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagem-item img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
 }
 
 .imagem-item h3 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #333;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #34495e;
 }
 
 footer {
-    background-color: #e0e0e0; /* Cor de fundo do rodapé */
-    color: #333; /* Cor do texto */
+    background-color: #f1f1f1; /* Cor neutra clara */
+    color: #34495e; /* Cor de texto mais escura e suave */
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05); /* Leve sombra no rodapé */
 }
 
 footer p {
@@ -117,10 +126,25 @@ footer p {
 }
 
 footer a {
-    color: #333;
+    color: #34495e;
     text-decoration: none;
+    font-weight: 600;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+footer .social-icons {
+    margin-top: 15px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #34495e;
+}
+
+footer .social-icons a:hover {
+    color: #7ed4d7; /* Cor suave ao passar o mouse */
 }
