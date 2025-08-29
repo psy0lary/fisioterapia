@@ -7,11 +7,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f9e3e8; /* Rosa bem clarinho */
+    color: #4f4f4f; /* Cor do texto */
 }
 
 header {
-    background-color: #3a97ff;
+    background-color: #f1c6d3; /* Nude mais puxado para o rosa */
     color: #fff;
     padding: 20px;
     display: flex;
@@ -24,6 +25,7 @@ header {
 
 header .logo h1 {
     font-size: 2rem;
+    font-weight: 700;
 }
 
 header nav ul {
@@ -40,10 +42,15 @@ header nav ul li a {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff99cc; /* Cor do hover */
 }
 
 .hero {
-    background-color: #e6f7ff;
+    background-color: #fbd2e0; /* Rosa suave */
     text-align: center;
     padding: 60px 20px;
 }
@@ -71,6 +78,7 @@ header nav ul li a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    border: 1px solid #e3b5c1; /* Borda suave em tom nude */
 }
 
 .card:hover {
@@ -99,9 +107,13 @@ header nav ul li a {
 }
 
 footer {
-    background-color: #3a97ff;
+    background-color: #f1c6d3; /* Nude mais puxado para o rosa */
     color: #fff;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
 }
