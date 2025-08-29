@@ -18,7 +18,7 @@
                 <li><a href="#exercicios">Exercícios</a></li>
                 <li><a href="#dicas">Dicas de Saúde</a></li>
                 <li><a href="#como-ingressar">Como Ingressar</a></li>
-                <li><a href="#salarios-oportunidades">Salários e Oportunidades</a></li> <!-- Nome alterado -->
+                <li><a href="#salarios-oportunidades">Salários e Oportunidades</a></li>
             </ul>
         </nav>
     </header>
@@ -99,5 +99,23 @@
     <footer>
         <p>&copy; 2025 Fisioterapia & Bem-estar - Todos os direitos reservados</p>
     </footer>
+
+    <script>
+        window.onscroll = function() {
+            stickyHeader();
+        };
+
+        var header = document.querySelector("header");
+
+        var sticky = header.offsetTop;
+
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
