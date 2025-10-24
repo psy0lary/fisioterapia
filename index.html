@@ -3,88 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fisioterapia - Guia Completo da Profissão</title>
+    <title>Fisioterapia - Profissão, Mercado e Carreira</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <i class="fas fa-heartbeat"></i>
-                    <span>FisioGuia</span>
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sobre" class="nav-link">Sobre a Profissão</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#areas" class="nav-link">Áreas de Atuação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#ingresso" class="nav-link">Como Ingressar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#faculdades" class="nav-link">Faculdades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#salario" class="nav-link">Salário</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-heart-pulse"></i>
+                <span>Fisioterapia</span>
             </div>
-        </nav>
-    </header>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#profissao" class="nav-link">Profissão</a></li>
+                <li><a href="#notas-corte" class="nav-link">Notas de Corte</a></li>
+                <li><a href="#curriculo" class="nav-link">Currículo</a></li>
+                <li><a href="#areas" class="nav-link">Áreas de Atuação</a></li>
+                <li><a href="#mercado" class="nav-link">Mercado</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Fisioterapia</h1>
-                <p class="hero-subtitle">Descubra tudo sobre a profissão que cuida do movimento e da qualidade de vida</p>
-                <div class="hero-buttons">
-                    <a href="#sobre" class="btn btn-primary">Saiba Mais</a>
-                    <a href="#faculdades" class="btn btn-secondary">Ver Faculdades</a>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Fisioterapia</h1>
+            <p class="hero-subtitle">A Profissão que Move a Saúde e o Bem-Estar</p>
+            <button class="cta-button">Explorar Agora</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Introdução -->
+    <section id="profissao" class="introduction">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>O que é Fisioterapia?</h2>
+                    <p>A Fisioterapia é uma Ciência da Saúde dedicada ao estudo, prevenção e tratamento de distúrbios cinéticos funcionais. Seu principal objetivo é preservar, manter, desenvolver ou restaurar a integridade de órgãos, sistemas ou funções do corpo humano.</p>
+                    <p>O fisioterapeuta é um profissional essencial na área da saúde, especializado em avaliar, tratar e prevenir disfunções físicas que afetam o movimento e a qualidade de vida das pessoas.</p>
                 </div>
-            </div>
-            <div class="hero-image">
-                <i class="fas fa-user-md"></i>
+                <div class="intro-cards">
+                    <div class="card">
+                        <i class="fas fa-user-nurse"></i>
+                        <h3>Profissional</h3>
+                        <p>Especializado em saúde e movimento</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Bem-Estar</h3>
+                        <p>Melhoria da qualidade de vida</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Reabilitação</h3>
+                        <p>Recuperação e prevenção</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre a Profissão -->
-    <section id="sobre" class="section">
+    <!-- Atribuições -->
+    <section class="attributions">
         <div class="container">
-            <h2 class="section-title">O que é Fisioterapia?</h2>
-            <div class="content-grid">
-                <div class="content-text">
-                    <p>A fisioterapia é uma ciência da saúde que estuda, previne e trata os distúrbios cinéticos funcionais intercorrentes em órgãos e sistemas do corpo humano. Seu objetivo é preservar, desenvolver ou restaurar a integridade de órgãos, sistemas ou funções, utilizando para isso o movimento como principal recurso terapêutico.</p>
-                    
-                    <div class="highlight-box">
-                        <h3>Objetivos da Fisioterapia</h3>
+            <h2>Principais Atribuições do Fisioterapeuta</h2>
+            <div class="attributions-grid">
+                <div class="attr-item">
+                    <div class="attr-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Avaliação Funcional</h3>
+                    <p>Diagnóstico detalhado das disfunções físicas e cinéticas</p>
+                </div>
+                <div class="attr-item">
+                    <div class="attr-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Terapia Manual</h3>
+                    <p>Técnicas como massagem e mobilização articular</p>
+                </div>
+                <div class="attr-item">
+                    <div class="attr-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Cinesioterapia</h3>
+                    <p>Movimentos e exercícios terapêuticos personalizados</p>
+                </div>
+                <div class="attr-item">
+                    <div class="attr-icon">
+                        <i class="fas fa-zap"></i>
+                    </div>
+                    <h3>Eletroterapia</h3>
+                    <p>Aplicação de correntes elétricas para tratamento</p>
+                </div>
+                <div class="attr-item">
+                    <div class="attr-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Termoterapia</h3>
+                    <p>Uso de calor e frio para reabilitação</p>
+                </div>
+                <div class="attr-item">
+                    <div class="attr-icon">
+                        <i class="fas fa-shield"></i>
+                    </div>
+                    <h3>Prevenção</h3>
+                    <p>Ações de promoção e prevenção da saúde</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notas de Corte -->
+    <section id="notas-corte" class="cutting-notes">
+        <div class="container">
+            <h2>Notas de Corte para Fisioterapia</h2>
+            
+            <div class="tabs">
+                <button class="tab-button active" data-tab="enem">ENEM/SISU</button>
+                <button class="tab-button" data-tab="mensalidades">Mensalidades</button>
+            </div>
+
+            <div id="enem" class="tab-content active">
+                <p class="tab-intro">O ingresso no curso de Fisioterapia é realizado por meio do ENEM, que serve como base para programas como SISU, PROUNI e FIES.</p>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Faixa de Pontuação</th>
+                                <th>Observação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Notas Mais Baixas</strong></td>
+                                <td>658 a 680</td>
+                                <td>Universidades com menor concorrência ou IES privadas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Média Nacional</strong></td>
+                                <td>700 a 715</td>
+                                <td>Universidades públicas via SISU (ampla concorrência)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Notas Mais Altas</strong></td>
+                                <td>720 a 760</td>
+                                <td>Universidades públicas de alta concorrência (UFPR, UFRJ, USP)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="mensalidades" class="tab-content">
+                <p class="tab-intro">O valor da mensalidade em faculdades privadas varia conforme a instituição, localização e modalidade de ensino.</p>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Faixa de Preço</th>
+                                <th>Valor Aproximado (R$)</th>
+                                <th>Exemplos de Instituições</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Até R$ 1.500,00</strong></td>
+                                <td>R$ 430 - R$ 1.500</td>
+                                <td>Anhanguera, Unopar, Uninassau</td>
+                            </tr>
+                            <tr>
+                                <td><strong>R$ 1.500 - R$ 3.000</strong></td>
+                                <td>R$ 1.500 - R$ 3.000</td>
+                                <td>Estácio de Sá, Faculdades de médio porte</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Acima de R$ 3.000</strong></td>
+                                <td>R$ 3.000 ou mais</td>
+                                <td>PUC-PR, Mackenzie, Universidades de prestígio</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grade Curricular -->
+    <section id="curriculo" class="curriculum">
+        <div class="container">
+            <h2>Grade Curricular e Conteúdo do Curso</h2>
+            <p class="section-intro">O curso de graduação em Fisioterapia tem duração média de <strong>5 anos (10 semestres)</strong>, combinando disciplinas teóricas e práticas.</p>
+            
+            <div class="curriculum-cycles">
+                <div class="cycle-card">
+                    <div class="cycle-header">
+                        <i class="fas fa-book"></i>
+                        <h3>Ciclo Básico</h3>
+                    </div>
+                    <div class="cycle-content">
+                        <p><strong>Disciplinas:</strong></p>
                         <ul>
-                            <li>Prevenir lesões e disfunções</li>
-                            <li>Restaurar a função motora</li>
-                            <li>Promover a qualidade de vida</li>
-                            <li>Reabilitar pacientes</li>
-                            <li>Educar sobre saúde e prevenção</li>
+                            <li>Anatomia Humana</li>
+                            <li>Fisiologia</li>
+                            <li>Biologia Celular e Molecular</li>
+                            <li>Bioquímica</li>
+                            <li>Patologia</li>
+                            <li>Farmacologia</li>
+                            <li>Bioestatística</li>
+                            <li>Saúde Pública</li>
                         </ul>
+                        <p class="cycle-focus"><strong>Foco:</strong> Fundamentos do corpo humano e bases das doenças</p>
                     </div>
                 </div>
-                <div class="content-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-stethoscope"></i>
+
+                <div class="cycle-card">
+                    <div class="cycle-header">
+                        <i class="fas fa-flask"></i>
+                        <h3>Ciclo Específico</h3>
+                    </div>
+                    <div class="cycle-content">
+                        <p><strong>Disciplinas:</strong></p>
+                        <ul>
+                            <li>Cinesiologia</li>
+                            <li>Biomecânica</li>
+                            <li>Avaliação em Fisioterapia</li>
+                            <li>Eletroterapia</li>
+                            <li>Fisioterapia Ortopédica</li>
+                            <li>Fisioterapia Respiratória</li>
+                            <li>Fisioterapia Neurológica</li>
+                            <li>Terapia Manual</li>
+                        </ul>
+                        <p class="cycle-focus"><strong>Foco:</strong> Técnicas de avaliação e tratamento específicos</p>
+                    </div>
+                </div>
+
+                <div class="cycle-card">
+                    <div class="cycle-header">
+                        <i class="fas fa-hospital"></i>
+                        <h3>Ciclo Prático</h3>
+                    </div>
+                    <div class="cycle-content">
+                        <p><strong>Atividades:</strong></p>
+                        <ul>
+                            <li>Estágios Supervisionados</li>
+                            <li>Prática Hospitalar</li>
+                            <li>Prática Ambulatorial</li>
+                            <li>Saúde Coletiva</li>
+                            <li>Trabalho de Conclusão de Curso (TCC)</li>
+                            <li>Projetos de Pesquisa</li>
+                        </ul>
+                        <p class="cycle-focus"><strong>Foco:</strong> Aplicação prática em ambientes reais</p>
                     </div>
                 </div>
             </div>
@@ -92,312 +270,146 @@
     </section>
 
     <!-- Áreas de Atuação -->
-    <section id="areas" class="section bg-light">
+    <section id="areas" class="areas">
         <div class="container">
-            <h2 class="section-title">Áreas de Atuação</h2>
+            <h2>Áreas de Atuação da Fisioterapia</h2>
+            <p class="section-intro">O fisioterapeuta possui um vasto leque de atuação em diferentes contextos de saúde e bem-estar.</p>
+            
             <div class="areas-grid">
                 <div class="area-card">
                     <div class="area-icon">
                         <i class="fas fa-bone"></i>
                     </div>
-                    <h3>Fisioterapia Ortopédica</h3>
+                    <h3>Ortopédica e Traumatológica</h3>
                     <p>Reabilitação de lesões musculoesqueléticas, fraturas, entorses e pós-operatórios.</p>
                 </div>
-                
+
                 <div class="area-card">
                     <div class="area-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Fisioterapia Neurológica</h3>
-                    <p>Recuperação de pacientes com AVC, Parkinson, esclerose múltipla e lesões medulares.</p>
+                    <h3>Neurológica</h3>
+                    <p>Tratamento de doenças neurológicas como AVC, Parkinson e Lesão Medular.</p>
                 </div>
-                
+
                 <div class="area-card">
                     <div class="area-icon">
                         <i class="fas fa-lungs"></i>
                     </div>
-                    <h3>Fisioterapia Respiratória</h3>
-                    <p>Tratamento de doenças pulmonares como asma, bronquite e enfisema.</p>
+                    <h3>Respiratória</h3>
+                    <p>Prevenção e tratamento de disfunções pulmonares e respiratórias.</p>
                 </div>
-                
+
                 <div class="area-card">
                     <div class="area-icon">
-                        <i class="fas fa-running"></i>
+                        <i class="fas fa-person-running"></i>
                     </div>
-                    <h3>Fisioterapia Desportiva</h3>
-                    <p>Prevenção e tratamento de lesões relacionadas à prática esportiva.</p>
+                    <h3>Esportiva</h3>
+                    <p>Prevenção e reabilitação de atletas para retorno seguro ao esporte.</p>
                 </div>
-                
-                <div class="area-card">
-                    <div class="area-icon">
-                        <i class="fas fa-user-friends"></i>
-                    </div>
-                    <h3>Fisioterapia Geriátrica</h3>
-                    <p>Atendimento especializado para idosos, promovendo autonomia e qualidade de vida.</p>
-                </div>
-                
-                <div class="area-card">
-                    <div class="area-icon">
-                        <i class="fas fa-baby"></i>
-                    </div>
-                    <h3>Fisioterapia Pediátrica</h3>
-                    <p>Tratamento de crianças com atrasos no desenvolvimento motor e condições neurológicas.</p>
-                </div>
-                
+
                 <div class="area-card">
                     <div class="area-icon">
                         <i class="fas fa-spa"></i>
                     </div>
-                    <h3>Fisioterapia Dermatofuncional</h3>
-                    <p>Reabilitação de condições estéticas e funcionais da pele.</p>
+                    <h3>Dermatofuncional</h3>
+                    <p>Tratamento de disfunções estéticas e dermatológicas.</p>
                 </div>
-                
-                <div class="area-card">
-                    <div class="area-icon">
-                        <i class="fas fa-water"></i>
-                    </div>
-                    <h3>Fisioterapia Aquática</h3>
-                    <p>Utilização da água como meio terapêutico para reabilitação.</p>
-                </div>
-                
+
                 <div class="area-card">
                     <div class="area-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
-                    <h3>Fisioterapia do Trabalho</h3>
-                    <p>Prevenção e tratamento de doenças ocupacionais e lesões relacionadas ao trabalho.</p>
+                    <h3>Do Trabalho</h3>
+                    <p>Prevenção de lesões laborais e promoção da ergonomia.</p>
                 </div>
+
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3>Pélvica</h3>
+                    <p>Tratamento de incontinência e reabilitação pós-parto.</p>
+                </div>
+
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Terapia Intensiva</h3>
+                    <p>Atuação em UTI para manutenção da função cardiorrespiratória.</p>
+                </div>
+            </div>
+
+            <div class="specialization-section">
+                <h3>Possibilidades de Especialização</h3>
+                <p>O fisioterapeuta pode buscar <strong>pós-graduações</strong> (especialização, mestrado e doutorado), além de <strong>cursos de extensão</strong> e formação complementar em áreas específicas para aprofundar seus conhecimentos e ampliar suas oportunidades de carreira.</p>
             </div>
         </div>
     </section>
 
-    <!-- Como Ingressar -->
-    <section id="ingresso" class="section">
+    <!-- Mercado de Trabalho -->
+    <section id="mercado" class="market">
         <div class="container">
-            <h2 class="section-title">Como Ingressar na Fisioterapia</h2>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Ensino Médio Completo</h3>
-                        <p>Conclua o ensino médio e prepare-se para o ENEM ou vestibulares específicos.</p>
-                    </div>
+            <h2>Mercado de Trabalho e Panorama Salarial</h2>
+            <p class="section-intro">O mercado de trabalho para fisioterapeutas no Brasil é sólido e em expansão, impulsionado pelo envelhecimento da população e aumento de doenças crônicas.</p>
+            
+            <div class="market-overview">
+                <div class="market-stat">
+                    <div class="stat-number">3.000</div>
+                    <p>Média Salarial Nacional (R$)</p>
                 </div>
+                <div class="market-stat">
+                    <div class="stat-number">5</div>
+                    <p>Anos de Duração do Curso</p>
+                </div>
+                <div class="market-stat">
+                    <div class="stat-number">8+</div>
+                    <p>Áreas de Atuação</p>
+                </div>
+            </div>
+
+            <div class="salary-section">
+                <h3>Previsão Salarial para 2025</h3>
+                <p>O salário varia conforme a região, especialização, tipo de vínculo e nível de experiência.</p>
                 
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Graduação em Fisioterapia</h3>
-                        <p>Curso superior com duração de 4 a 5 anos em instituição reconhecida pelo MEC.</p>
+                <div class="salary-cards">
+                    <div class="salary-card">
+                        <div class="salary-level">Recém-formado</div>
+                        <div class="salary-experience">0 a 1 ano</div>
+                        <div class="salary-amount">R$ 2.050 - R$ 3.000</div>
+                    </div>
+
+                    <div class="salary-card">
+                        <div class="salary-level">Júnior</div>
+                        <div class="salary-experience">1 a 3 anos</div>
+                        <div class="salary-amount">R$ 3.000 - R$ 4.000</div>
+                    </div>
+
+                    <div class="salary-card">
+                        <div class="salary-level">Pleno</div>
+                        <div class="salary-experience">3 a 5 anos</div>
+                        <div class="salary-amount">R$ 4.000 - R$ 5.500</div>
+                    </div>
+
+                    <div class="salary-card">
+                        <div class="salary-level">Sênior</div>
+                        <div class="salary-experience">Mais de 5 anos</div>
+                        <div class="salary-amount">R$ 5.500 - R$ 7.500+</div>
                     </div>
                 </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Registro no CREFITO</h3>
-                        <p>Registre-se no Conselho Regional de Fisioterapia e Terapia Ocupacional.</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Especialização (Opcional)</h3>
-                        <p>Busque especializações para se destacar no mercado de trabalho.</p>
-                    </div>
-                </div>
+
+                <p class="salary-note">Profissionais com especializações e que atuam em áreas de alta demanda podem alcançar salários significativamente superiores.</p>
             </div>
         </div>
     </section>
 
-    <!-- Faculdades -->
-    <section id="faculdades" class="section bg-light">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <h2 class="section-title">Faculdades e Notas de Corte</h2>
-            
-            <div class="tabs">
-                <button class="tab-button active" onclick="openTab(event, 'parana')">Paraná</button>
-                <button class="tab-button" onclick="openTab(event, 'brasil')">Brasil</button>
-                <button class="tab-button" onclick="openTab(event, 'notas')">Notas de Corte</button>
-            </div>
-            
-            <div id="parana" class="tab-content active">
-                <h3>Principais Faculdades no Paraná</h3>
-                <div class="faculdades-grid">
-                    <div class="faculdade-card">
-                        <h4>UFPR - Universidade Federal do Paraná</h4>
-                        <p><strong>Tipo:</strong> Pública Federal</p>
-                        <p><strong>Localização:</strong> Curitiba</p>
-                        <p><strong>Nota de Corte SISU:</strong> 696,46 pontos</p>
-                    </div>
-                    
-                    <div class="faculdade-card">
-                        <h4>UEL - Universidade Estadual de Londrina</h4>
-                        <p><strong>Tipo:</strong> Pública Estadual</p>
-                        <p><strong>Localização:</strong> Londrina</p>
-                        <p><strong>Nota de Corte SISU:</strong> 727,24 pontos</p>
-                    </div>
-                    
-                    <div class="faculdade-card">
-                        <h4>UEM - Universidade Estadual de Maringá</h4>
-                        <p><strong>Tipo:</strong> Pública Estadual</p>
-                        <p><strong>Localização:</strong> Maringá</p>
-                        <p><strong>Avaliação:</strong> Curso bem avaliado pelo MEC</p>
-                    </div>
-                    
-                    <div class="faculdade-card">
-                        <h4>PUCPR - Pontifícia Universidade Católica do Paraná</h4>
-                        <p><strong>Tipo:</strong> Privada</p>
-                        <p><strong>Localização:</strong> Curitiba</p>
-                        <p><strong>Tradição:</strong> Instituição com tradição e qualidade</p>
-                    </div>
-                    
-                    <div class="faculdade-card">
-                        <h4>Universidade Positivo</h4>
-                        <p><strong>Tipo:</strong> Privada</p>
-                        <p><strong>Localização:</strong> Curitiba</p>
-                        <p><strong>Infraestrutura:</strong> Boa infraestrutura e laboratórios</p>
-                    </div>
-                    
-                    <div class="faculdade-card">
-                        <h4>Universidade Tuiuti do Paraná</h4>
-                        <p><strong>Tipo:</strong> Privada</p>
-                        <p><strong>Localização:</strong> Curitiba</p>
-                        <p><strong>Nota FIES:</strong> 498,22 pontos</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="brasil" class="tab-content">
-                <h3>Principais Faculdades no Brasil</h3>
-                <div class="faculdades-grid">
-                    <div class="faculdade-card">
-                        <h4>USP - Universidade de São Paulo</h4>
-                        <p><strong>Nota de Corte:</strong> 769,72 pontos (maior do país)</p>
-                        <p><strong>Localização:</strong> São Paulo - SP</p>
-                    </div>
-                    
-                    <div class="faculdade-card">
-                        <h4>UFMG - Universidade Federal de Minas Gerais</h4>
-                        <p><strong>Nota de Corte:</strong> 730,54 pontos</p>
-                        <p><strong>Localização:</strong> Belo Horizonte - MG</p>
-                    </div>
-                    
-                    <div class="faculdade-card">
-                        <h4>UNIFESP - Universidade Federal de São Paulo</h4>
-                        <p><strong>Nota de Corte:</strong> 725,48 pontos</p>
-                        <p><strong>Localização:</strong> São Paulo - SP</p>
-                    </div>
-                    
-                    <div class="faculdade-card">
-                        <h4>UFPE - Universidade Federal de Pernambuco</h4>
-                        <p><strong>Nota de Corte:</strong> 724,61 pontos</p>
-                        <p><strong>Localização:</strong> Recife - PE</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="notas" class="tab-content">
-                <h3>Notas de Corte por Programa</h3>
-                <div class="notas-container">
-                    <div class="nota-card">
-                        <h4>SISU 2025</h4>
-                        <p><strong>Média Nacional:</strong> 715,22 pontos</p>
-                        <p><strong>Maior Nota:</strong> 769,72 pontos (USP)</p>
-                        <p><strong>Menor Nota:</strong> 660,44 pontos</p>
-                        <p><strong>Faixa Competitiva:</strong> 724 - 757 pontos</p>
-                    </div>
-                    
-                    <div class="nota-card">
-                        <h4>ProUni 2025</h4>
-                        <p><strong>Média Nacional:</strong> 587,01 pontos</p>
-                        <p><strong>Nota Média Geral:</strong> 592,29 pontos</p>
-                        <p>Para bolsas integrais e parciais em instituições privadas</p>
-                    </div>
-                    
-                    <div class="nota-card">
-                        <h4>FIES</h4>
-                        <p><strong>Média Curitiba-PR:</strong> 548,59 pontos</p>
-                        <p>Financiamento estudantil para instituições privadas</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Salário -->
-    <section id="salario" class="section">
-        <div class="container">
-            <h2 class="section-title">Salário e Oportunidades</h2>
-            <div class="salary-container">
-                <div class="salary-overview">
-                    <h3>Panorama Salarial 2025</h3>
-                    <div class="salary-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">R$ 3.236</div>
-                            <div class="stat-label">Média Nacional</div>
-                            <div class="stat-detail">31h semanais</div>
-                        </div>
-                        
-                        <div class="stat-item">
-                            <div class="stat-number">R$ 3.406</div>
-                            <div class="stat-label">Setor Público</div>
-                            <div class="stat-detail">30h semanais</div>
-                        </div>
-                        
-                        <div class="stat-item">
-                            <div class="stat-number">R$ 5.670</div>
-                            <div class="stat-label">Teto Salarial</div>
-                            <div class="stat-detail">Especialistas</div>
-                        </div>
-                        
-                        <div class="stat-item">
-                            <div class="stat-number">R$ 4.800</div>
-                            <div class="stat-label">Piso Proposto</div>
-                            <div class="stat-detail">PL 1.731/2021</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="opportunities">
-                    <h3>Oportunidades de Trabalho</h3>
-                    <div class="opportunities-grid">
-                        <div class="opportunity-item">
-                            <i class="fas fa-hospital"></i>
-                            <span>Hospitais e Clínicas</span>
-                        </div>
-                        <div class="opportunity-item">
-                            <i class="fas fa-home"></i>
-                            <span>Consultórios Particulares</span>
-                        </div>
-                        <div class="opportunity-item">
-                            <i class="fas fa-wheelchair"></i>
-                            <span>Centros de Reabilitação</span>
-                        </div>
-                        <div class="opportunity-item">
-                            <i class="fas fa-futbol"></i>
-                            <span>Clubes Esportivos</span>
-                        </div>
-                        <div class="opportunity-item">
-                            <i class="fas fa-building"></i>
-                            <span>Empresas (Fisioterapia do Trabalho)</span>
-                        </div>
-                        <div class="opportunity-item">
-                            <i class="fas fa-house-user"></i>
-                            <span>Home Care</span>
-                        </div>
-                        <div class="opportunity-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Ensino e Pesquisa</span>
-                        </div>
-                        <div class="opportunity-item">
-                            <i class="fas fa-heart"></i>
-                            <span>Saúde Pública (SUS)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2>Pronto para Começar sua Jornada em Fisioterapia?</h2>
+            <p>Explore as oportunidades e transforme vidas através da reabilitação e bem-estar.</p>
+            <button class="cta-button-large">Saiba Mais</button>
         </div>
     </section>
 
@@ -406,31 +418,35 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>FisioGuia</h3>
-                    <p>Seu guia completo sobre a profissão de fisioterapia no Brasil.</p>
+                    <h4>Sobre Fisioterapia</h4>
+                    <p>Plataforma informativa sobre a profissão de Fisioterapia, mercado de trabalho e oportunidades de carreira.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Links Úteis</h4>
+                    <h4>Navegação</h4>
                     <ul>
-                        <li><a href="https://www.coffito.gov.br/">COFFITO</a></li>
-                        <li><a href="https://www.mec.gov.br/">MEC</a></li>
-                        <li><a href="https://sisu.mec.gov.br/">SISU</a></li>
-                        <li><a href="https://prouniportal.mec.gov.br/">ProUni</a></li>
+                        <li><a href="#profissao">Profissão</a></li>
+                        <li><a href="#notas-corte">Notas de Corte</a></li>
+                        <li><a href="#curriculo">Currículo</a></li>
+                        <li><a href="#areas">Áreas de Atuação</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contato</h4>
-                    <p>Este site foi desenvolvido para fins educacionais.</p>
-                    <p>Informações atualizadas em 2025.</p>
+                    <p>Email: info@fisioterapia.com</p>
+                    <p>Telefone: (11) 3000-0000</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 FisioGuia. Desenvolvido para orientação educacional.</p>
+                <p>&copy; 2025 Fisioterapia - Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Botão Flutuante -->
+    <button class="floating-button">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
-

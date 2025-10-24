@@ -1,80 +1,57 @@
-// Navegação móvel
+// ==================== VARIÁVEIS GLOBAIS ====================
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
+const floatingButton = document.querySelector('.floating-button');
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabContents = document.querySelectorAll('.tab-content');
 
+// ==================== MENU HAMBURGER ====================
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
 });
 
-// Fechar menu móvel ao clicar em um link
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-}));
-
-// Smooth scrolling para links internos
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            const headerHeight = document.querySelector('.header').offsetHeight;
-            const targetPosition = target.offsetTop - headerHeight;
-            
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
+// Fechar menu ao clicar em um link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
     });
 });
 
-// Destacar link ativo na navegação
+// ==================== BOTÃO FLUTUANTE (SCROLL TO TOP) ====================
 window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    let current = '';
-    const headerHeight = document.querySelector('.header').offsetHeight;
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - headerHeight - 100;
-        const sectionHeight = section.offsetHeight;
-        
-        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
+    if (window.scrollY > 300) {
+        floatingButton.classList.add('show');
+    } else {
+        floatingButton.classList.remove('show');
+    }
+});
+
+floatingButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
 });
 
-// Sistema de tabs
-function openTab(evt, tabName) {
-    // Esconder todos os conteúdos das tabs
-    const tabContents = document.getElementsByClassName('tab-content');
-    for (let i = 0; i < tabContents.length; i++) {
-        tabContents[i].classList.remove('active');
-    }
-    
-    // Remover classe active de todos os botões
-    const tabButtons = document.getElementsByClassName('tab-button');
-    for (let i = 0; i < tabButtons.length; i++) {
-        tabButtons[i].classList.remove('active');
-    }
-    
-    // Mostrar o conteúdo da tab selecionada e marcar o botão como ativo
-    document.getElementById(tabName).classList.add('active');
-    evt.currentTarget.classList.add('active');
-}
+// ==================== TABS ====================
+tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const tabName = button.getAttribute('data-tab');
+        
+        // Remove classe ativa de todos os botões e conteúdos
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Adiciona classe ativa ao botão clicado e seu conteúdo
+        button.classList.add('active');
+        document.getElementById(tabName).classList.add('active');
+    });
+});
 
-// Animação de entrada dos elementos
+// ==================== ANIMAÇÃO DE SCROLL ====================
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -90,346 +67,234 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observar elementos para animação
-document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.area-card, .faculdade-card, .step, .stat-item, .nota-card');
-    
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-        observer.observe(el);
-    });
+document.querySelectorAll('.card, .attr-item, .area-card, .salary-card, .cycle-card, .market-stat').forEach(element => {
+    element.style.opacity = '0';
+    element.style.transform = 'translateY(20px)';
+    element.style.transition = 'all 0.6s ease-out';
+    observer.observe(element);
 });
 
-// Contador animado para estatísticas de salário
+// ==================== EFEITO PARALLAX ====================
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    const heroBackground = document.querySelector('.hero-background');
+    
+    if (heroBackground) {
+        heroBackground.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+    }
+});
+
+// ==================== ANIMAÇÃO DE NÚMEROS ====================
 function animateCounter(element, target, duration = 2000) {
-    const start = 0;
+    let current = 0;
     const increment = target / (duration / 16);
-    let current = start;
     
     const timer = setInterval(() => {
         current += increment;
         if (current >= target) {
-            current = target;
+            element.textContent = target;
             clearInterval(timer);
-        }
-        
-        // Formatar número como moeda brasileira
-        if (element.textContent.includes('R$')) {
-            element.textContent = `R$ ${Math.floor(current).toLocaleString('pt-BR')}`;
         } else {
-            element.textContent = Math.floor(current).toString();
+            element.textContent = Math.floor(current);
         }
     }, 16);
 }
 
-// Inicializar contadores quando a seção de salário estiver visível
-const salarySection = document.querySelector('#salario');
-let countersAnimated = false;
+// Animar números quando entram em view
+const statNumbers = document.querySelectorAll('.stat-number');
+let hasAnimated = false;
 
-const salaryObserver = new IntersectionObserver((entries) => {
+const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting && !countersAnimated) {
-            const statNumbers = document.querySelectorAll('.stat-number');
-            
-            statNumbers.forEach(stat => {
-                const text = stat.textContent;
-                const number = parseInt(text.replace(/\D/g, ''));
-                
-                if (number > 0) {
-                    animateCounter(stat, number);
-                }
+        if (entry.isIntersecting && !hasAnimated) {
+            statNumbers.forEach(number => {
+                const target = parseInt(number.textContent.replace(/\D/g, ''));
+                animateCounter(number, target);
             });
-            
-            countersAnimated = true;
+            hasAnimated = true;
         }
     });
-}, { threshold: 0.3 });
+}, { threshold: 0.5 });
 
-if (salarySection) {
-    salaryObserver.observe(salarySection);
+if (statNumbers.length > 0) {
+    statsObserver.observe(statNumbers[0].closest('.market-stat'));
 }
 
-// Efeito parallax suave no hero
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    const heroImage = document.querySelector('.hero-image i');
+// ==================== RIPPLE EFFECT ====================
+function createRipple(event) {
+    const button = event.currentTarget;
+    const ripple = document.createElement('span');
     
-    if (hero && heroImage) {
-        const rate = scrolled * -0.5;
-        heroImage.style.transform = `translateY(${rate}px)`;
+    const rect = button.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const x = event.clientX - rect.left - size / 2;
+    const y = event.clientY - rect.top - size / 2;
+    
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = x + 'px';
+    ripple.style.top = y + 'px';
+    ripple.classList.add('ripple');
+    
+    // Remover ripple anterior se existir
+    const existingRipple = button.querySelector('.ripple');
+    if (existingRipple) {
+        existingRipple.remove();
     }
-});
-
-// Tooltip para informações adicionais
-function createTooltip(element, text) {
-    const tooltip = document.createElement('div');
-    tooltip.className = 'tooltip';
-    tooltip.textContent = text;
-    tooltip.style.cssText = `
-        position: absolute;
-        background: var(--text-dark);
-        color: white;
-        padding: 8px 12px;
-        border-radius: 4px;
-        font-size: 14px;
-        white-space: nowrap;
-        z-index: 1000;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        pointer-events: none;
-    `;
     
-    document.body.appendChild(tooltip);
-    
-    element.addEventListener('mouseenter', (e) => {
-        const rect = element.getBoundingClientRect();
-        tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
-        tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
-        tooltip.style.opacity = '1';
-    });
-    
-    element.addEventListener('mouseleave', () => {
-        tooltip.style.opacity = '0';
-    });
+    button.appendChild(ripple);
 }
 
-// Adicionar tooltips para elementos com informações adicionais
-document.addEventListener('DOMContentLoaded', () => {
-    // Tooltip para notas de corte
-    const notaCards = document.querySelectorAll('.nota-card');
-    notaCards.forEach(card => {
-        const title = card.querySelector('h4').textContent;
-        if (title.includes('SISU')) {
-            createTooltip(card, 'Sistema de Seleção Unificada - Universidades Públicas');
-        } else if (title.includes('ProUni')) {
-            createTooltip(card, 'Programa Universidade para Todos - Bolsas em Universidades Privadas');
-        } else if (title.includes('FIES')) {
-            createTooltip(card, 'Fundo de Financiamento Estudantil - Financiamento para Universidades Privadas');
+// Adicionar efeito ripple aos botões
+const buttons = document.querySelectorAll('.cta-button, .cta-button-large, .tab-button');
+buttons.forEach(button => {
+    button.addEventListener('click', createRipple);
+});
+
+// ==================== SMOOTH SCROLL PARA LINKS INTERNOS ====================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         }
     });
 });
 
-// Busca rápida (funcionalidade adicional)
-function createSearchFunction() {
-    const searchInput = document.createElement('input');
-    searchInput.type = 'text';
-    searchInput.placeholder = 'Buscar informações...';
-    searchInput.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        padding: 10px;
-        border: 2px solid var(--primary-color);
-        border-radius: 25px;
-        outline: none;
-        z-index: 1001;
-        display: none;
-    `;
+// ==================== EFEITO DE HOVER NOS CARDS ====================
+const cards = document.querySelectorAll('.card, .attr-item, .area-card, .cycle-card');
+
+cards.forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.boxShadow = '0 8px 32px rgba(76, 175, 80, 0.3)';
+    });
     
-    document.body.appendChild(searchInput);
+    card.addEventListener('mouseleave', function() {
+        this.style.boxShadow = '';
+    });
+});
+
+// ==================== ANIMAÇÃO DE DIGITAÇÃO ====================
+function typeWriter(element, text, speed = 50) {
+    let index = 0;
+    element.textContent = '';
     
-    // Ativar busca com Ctrl+F
-    document.addEventListener('keydown', (e) => {
-        if (e.ctrlKey && e.key === 'f') {
-            e.preventDefault();
-            searchInput.style.display = searchInput.style.display === 'none' ? 'block' : 'none';
-            if (searchInput.style.display === 'block') {
-                searchInput.focus();
+    function type() {
+        if (index < text.length) {
+            element.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, speed);
+        }
+    }
+    
+    type();
+}
+
+// Aplicar efeito de digitação ao título hero
+const heroTitle = document.querySelector('.hero-title');
+if (heroTitle) {
+    const originalText = heroTitle.textContent;
+    const titleObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                typeWriter(heroTitle, originalText, 80);
+                titleObserver.unobserve(entry.target);
             }
-        }
-        
-        if (e.key === 'Escape') {
-            searchInput.style.display = 'none';
-            clearHighlights();
-        }
-    });
-    
-    searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        clearHighlights();
-        
-        if (searchTerm.length > 2) {
-            highlightText(searchTerm);
-        }
-    });
-}
-
-function highlightText(searchTerm) {
-    const walker = document.createTreeWalker(
-        document.body,
-        NodeFilter.SHOW_TEXT,
-        null,
-        false
-    );
-    
-    const textNodes = [];
-    let node;
-    
-    while (node = walker.nextNode()) {
-        if (node.textContent.toLowerCase().includes(searchTerm)) {
-            textNodes.push(node);
-        }
-    }
-    
-    textNodes.forEach(textNode => {
-        const parent = textNode.parentNode;
-        const text = textNode.textContent;
-        const regex = new RegExp(`(${searchTerm})`, 'gi');
-        const highlightedText = text.replace(regex, '<mark style="background-color: yellow; padding: 2px;">$1</mark>');
-        
-        if (highlightedText !== text) {
-            const wrapper = document.createElement('span');
-            wrapper.innerHTML = highlightedText;
-            parent.replaceChild(wrapper, textNode);
-        }
-    });
-}
-
-function clearHighlights() {
-    const highlights = document.querySelectorAll('mark');
-    highlights.forEach(mark => {
-        const parent = mark.parentNode;
-        parent.replaceChild(document.createTextNode(mark.textContent), mark);
-        parent.normalize();
-    });
-}
-
-// Inicializar funcionalidade de busca
-createSearchFunction();
-
-// Botão "Voltar ao topo"
-function createBackToTopButton() {
-    const button = document.createElement('button');
-    button.innerHTML = '<i class="fas fa-arrow-up"></i>';
-    button.className = 'back-to-top';
-    button.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        background-color: var(--primary-color);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        font-size: 18px;
-        box-shadow: var(--shadow-lg);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 1000;
-    `;
-    
-    document.body.appendChild(button);
-    
-    // Mostrar/esconder botão baseado no scroll
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            button.style.opacity = '1';
-            button.style.visibility = 'visible';
-        } else {
-            button.style.opacity = '0';
-            button.style.visibility = 'hidden';
-        }
-    });
-    
-    // Ação do botão
-    button.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
         });
     });
-    
-    // Efeito hover
-    button.addEventListener('mouseenter', () => {
-        button.style.transform = 'scale(1.1)';
-    });
-    
-    button.addEventListener('mouseleave', () => {
-        button.style.transform = 'scale(1)';
-    });
+    titleObserver.observe(heroTitle);
 }
 
-// Inicializar botão "Voltar ao topo"
-createBackToTopButton();
+// ==================== VALIDAÇÃO E INTERATIVIDADE ADICIONAL ====================
+// Adicionar classe de animação aos elementos quando carregam
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+});
 
-// Preloader (opcional)
-function createPreloader() {
-    const preloader = document.createElement('div');
-    preloader.id = 'preloader';
-    preloader.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        transition: opacity 0.5s ease;
-    `;
-    
-    preloader.innerHTML = `
-        <div style="
-            width: 50px;
-            height: 50px;
-            border: 5px solid var(--light-blue);
-            border-top: 5px solid var(--primary-color);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        "></div>
-        <style>
-            @keyframes spin {
-                0% { transform: rotate(0deg); }
-                100% { transform: rotate(360deg); }
-            }
-        </style>
-    `;
-    
-    document.body.prepend(preloader);
-    
-    // Remover preloader quando a página carregar
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.style.opacity = '0';
-            setTimeout(() => {
-                preloader.remove();
-            }, 500);
-        }, 500);
-    });
+// ==================== DARK MODE TOGGLE (OPCIONAL) ====================
+// Descomente se desejar adicionar toggle de dark mode
+/*
+const darkModeToggle = document.createElement('button');
+darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+darkModeToggle.classList.add('dark-mode-toggle');
+document.body.appendChild(darkModeToggle);
+
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+});
+
+// Carregar preferência de dark mode
+if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
 }
+*/
 
-// Inicializar preloader
-createPreloader();
-
-// Validação de formulário (se houver)
-function validateForm(form) {
-    const inputs = form.querySelectorAll('input[required], textarea[required]');
-    let isValid = true;
+// ==================== MODAL PARA MAIS INFORMAÇÕES (OPCIONAL) ====================
+function createModal(title, content) {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>${title}</h2>
+            <p>${content}</p>
+        </div>
+    `;
+    document.body.appendChild(modal);
     
-    inputs.forEach(input => {
-        if (!input.value.trim()) {
-            input.style.borderColor = 'red';
-            isValid = false;
-        } else {
-            input.style.borderColor = '';
+    const closeBtn = modal.querySelector('.close');
+    closeBtn.addEventListener('click', () => {
+        modal.remove();
+    });
+    
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.remove();
         }
     });
-    
-    return isValid;
 }
 
-// Lazy loading para imagens (se houver)
-function lazyLoadImages() {
+// ==================== FORM VALIDATION (SE HOUVER FORMULÁRIO) ====================
+const forms = document.querySelectorAll('form');
+forms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // Adicionar lógica de validação aqui
+        console.log('Formulário enviado');
+    });
+});
+
+// ==================== EFEITO DE FADE-IN AO CARREGAR ====================
+window.addEventListener('load', () => {
+    const elements = document.querySelectorAll('section');
+    elements.forEach((element, index) => {
+        element.style.opacity = '0';
+        element.style.animation = `fadeInUp 0.8s ease-out ${index * 0.1}s forwards`;
+    });
+});
+
+// ==================== DETECÇÃO DE NAVEGADOR ====================
+function detectBrowser() {
+    const ua = navigator.userAgent;
+    if (ua.indexOf('Firefox') > -1) {
+        document.body.classList.add('firefox');
+    } else if (ua.indexOf('Chrome') > -1) {
+        document.body.classList.add('chrome');
+    } else if (ua.indexOf('Safari') > -1) {
+        document.body.classList.add('safari');
+    }
+}
+
+detectBrowser();
+
+// ==================== PERFORMANCE: LAZY LOADING ====================
+if ('IntersectionObserver' in window) {
     const images = document.querySelectorAll('img[data-src]');
-    
-    const imageObserver = new IntersectionObserver((entries) => {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
@@ -443,49 +308,6 @@ function lazyLoadImages() {
     images.forEach(img => imageObserver.observe(img));
 }
 
-// Inicializar lazy loading
-lazyLoadImages();
-
-// Acessibilidade - navegação por teclado
-document.addEventListener('keydown', (e) => {
-    // Navegação por tabs melhorada
-    if (e.key === 'Tab') {
-        const focusableElements = document.querySelectorAll(
-            'a[href], button, input, textarea, select, [tabindex]:not([tabindex="-1"])'
-        );
-        
-        const firstElement = focusableElements[0];
-        const lastElement = focusableElements[focusableElements.length - 1];
-        
-        if (e.shiftKey && document.activeElement === firstElement) {
-            e.preventDefault();
-            lastElement.focus();
-        } else if (!e.shiftKey && document.activeElement === lastElement) {
-            e.preventDefault();
-            firstElement.focus();
-        }
-    }
-});
-
-// Performance - debounce para eventos de scroll
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Aplicar debounce aos eventos de scroll
-const debouncedScrollHandler = debounce(() => {
-    // Handlers de scroll aqui
-}, 16);
-
-window.addEventListener('scroll', debouncedScrollHandler);
-
-console.log('🏥 Site de Fisioterapia carregado com sucesso!');
-
+// ==================== CONSOLE LOG PARA DEBUG ====================
+console.log('Script carregado com sucesso!');
+console.log('Fisioterapia - Site Profissional v1.0');
