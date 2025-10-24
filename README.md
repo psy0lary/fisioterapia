@@ -1,98 +1,112 @@
-# fisioterapia
-# Relatório Abrangente sobre a Profissão de Fisioterapia
+# Fisioterapia: A Profissão que Move a Saúde e o Bem-Estar
 
-Este relatório detalha a profissão de fisioterapia, abordando aspectos como ingresso na carreira, áreas de atuação, remuneração e oportunidades de mercado, além de informações sobre instituições de ensino no Brasil, com foco no estado do Paraná, e suas respectivas notas de corte.
+## 1. Introdução sobre a Profissão de Fisioterapia
 
-## 1. Introdução à Fisioterapia
+A Fisioterapia é uma **Ciência da Saúde** dedicada ao estudo, prevenção e tratamento de distúrbios cinéticos funcionais intercorrentes em órgãos e sistemas do corpo humano. Seu principal objetivo é **preservar, manter, desenvolver ou restaurar (reabilitação) a integridade de órgãos, sistemas ou funções** [1, 2].
 
-A fisioterapia é uma ciência da saúde que estuda, previne e trata os distúrbios cinéticos funcionais intercorrentes em órgãos e sistemas do corpo humano. Seu objetivo é preservar, desenvolver ou restaurar a integridade de órgãos, sistemas ou funções, utilizando para isso o movimento como principal recurso terapêutico.
+O fisioterapeuta é um profissional essencial na área da saúde, especializado em **avaliar, tratar e prevenir disfunções físicas** que afetam o movimento e a qualidade de vida das pessoas [3]. A importância da Fisioterapia reside na sua capacidade de promover a **reabilitação**, aliviar a dor e melhorar a **qualidade de vida** em diferentes contextos de saúde, desde a recuperação de lesões até o tratamento de doenças crônicas e a prevenção [4, 5].
 
-## 2. Como Ingressar na Carreira de Fisioterapeuta
+### Principais Atribuições do Fisioterapeuta
 
-Para se tornar um fisioterapeuta no Brasil, é necessário obter um diploma de graduação em Fisioterapia, oferecido por instituições de ensino superior reconhecidas pelo Ministério da Educação (MEC). O curso tem duração média de quatro a cinco anos e abrange disciplinas teóricas e práticas em áreas como anatomia, fisiologia, cinesiologia, patologia, semiologia, recursos terapêuticos manuais e eletrotermofototerapia, entre outras.
+As atribuições do fisioterapeuta envolvem a realização de uma **avaliação funcional** detalhada, o **diagnóstico fisioterapêutico** e a elaboração de um **plano de tratamento** individualizado. Para isso, o profissional utiliza um conjunto de técnicas e recursos, como:
 
-Após a conclusão do curso, o profissional deve se registrar no Conselho Regional de Fisioterapia e Terapia Ocupacional (CREFITO) de sua região para poder exercer a profissão legalmente.
+*   **Cinesioterapia:** Uso de movimentos e exercícios terapêuticos.
+*   **Eletroterapia:** Aplicação de correntes elétricas.
+*   **Termoterapia e Crioterapia:** Uso de calor e frio.
+*   **Mecanoterapia:** Uso de aparelhos e pesos.
+*   **Terapia Manual:** Técnicas como massagem e mobilização articular.
+*   **Prescrição e confecção de órteses e próteses.**
+*   **Ações de prevenção e promoção da saúde.**
 
-## 3. Tipos e Áreas de Atuação da Fisioterapia
+## 2. Notas de Corte para o Curso de Fisioterapia
 
-A fisioterapia é uma área vasta, com diversas especialidades que permitem ao profissional atuar em diferentes contextos. Algumas das principais áreas incluem:
+O ingresso no curso de Fisioterapia em instituições de ensino superior (IES) públicas e privadas no Brasil é frequentemente realizado por meio do **Exame Nacional do Ensino Médio (ENEM)**, que serve como base para programas como o **Sistema de Seleção Unificada (SISU)**, o **Programa Universidade para Todos (PROUNI)** e o **Fundo de Financiamento Estudantil (FIES)** [6].
 
-*   **Fisioterapia Ortopédica e Traumatológica:** Atua na reabilitação de lesões musculoesqueléticas, fraturas, entorses, pós-operatórios e doenças degenerativas.
-*   **Fisioterapia Neurológica:** Foca na recuperação de pacientes com doenças neurológicas, como AVC, Parkinson, esclerose múltipla, lesões medulares e paralisia cerebral.
-*   **Fisioterapia Respiratória:** Trata doenças pulmonares agudas e crônicas, como asma, bronquite, enfisema e fibrose cística, visando melhorar a função pulmonar e a qualidade de vida.
-*   **Fisioterapia Desportiva:** Trabalha com atletas na prevenção e tratamento de lesões relacionadas à prática esportiva, otimizando o desempenho e auxiliando no retorno às atividades.
-*   **Fisioterapia Geriátrica:** Especializada no atendimento a idosos, buscando promover a autonomia, prevenir quedas e melhorar a qualidade de vida na terceira idade.
-*   **Fisioterapia Pediátrica:** Dedicada ao tratamento de crianças com atrasos no desenvolvimento motor, doenças congênitas ou adquiridas, e condições neurológicas.
-*   **Fisioterapia Dermatofuncional:** Atua na reabilitação de condições estéticas e funcionais da pele, como queimaduras, cicatrizes, edemas e pós-operatórios de cirurgias plásticas.
-*   **Fisioterapia Aquática (Hidroterapia):** Utiliza a água como meio terapêutico para reabilitação, aproveitando suas propriedades físicas para facilitar o movimento e reduzir o impacto.
-*   **Fisioterapia do Trabalho:** Previne e trata doenças ocupacionais e lesões relacionadas ao ambiente de trabalho, promovendo a ergonomia e a saúde do trabalhador.
-*   **Fisioterapia em Saúde da Mulher:** Aborda questões específicas da saúde feminina, como incontinência urinária, disfunções pélvicas, pré e pós-parto.
+### Notas de Corte (ENEM/SISU)
 
-## 4. Salário e Oportunidades de Carreira
+As notas de corte para Fisioterapia variam significativamente entre as IES, regiões e modalidades de concorrência (ampla concorrência e cotas). A média nacional para o curso tem se situado em torno de **700 pontos** [7].
 
-O salário de um fisioterapeuta no Brasil pode variar significativamente dependendo da região, experiência, especialização, tipo de instituição (pública ou privada) e modalidade de trabalho (CLT, autônomo, etc.).
+| Categoria | Faixa de Pontuação (Aproximada) | Observação |
+| :--- | :--- | :--- |
+| **Notas mais baixas** | 658 a 680 pontos | Geralmente em universidades com menor concorrência ou IES privadas via PROUNI/FIES. |
+| **Média Nacional** | 700 a 715 pontos | Pontuação média para ingresso em universidades públicas via SISU (ampla concorrência). |
+| **Notas mais altas** | 720 a 760 pontos | Em universidades públicas de alta concorrência, como UFPR, UFRJ, ou USP. |
 
-De acordo com dados recentes (2025), a média salarial nacional para fisioterapeutas gira em torno de R$ 3.000 a R$ 3.500 mensais para uma jornada de 30 a 31 horas semanais. No entanto, profissionais com maior experiência, especializações ou que atuam em áreas de alta demanda podem alcançar salários mais elevados, chegando a R$ 5.000 ou mais. O setor público, por exemplo, pode apresentar uma faixa salarial inicial de aproximadamente R$ 3.400.
+### Mensalidades em Faculdades Privadas
 
-O mercado de trabalho para fisioterapeutas é amplo e oferece diversas oportunidades em:
+O valor da mensalidade em faculdades privadas de Fisioterapia no Brasil apresenta uma grande variação, dependendo da instituição, localização e modalidade de ensino (presencial ou semipresencial).
 
-*   Hospitais e clínicas
-*   Consultórios particulares
-*   Centros de reabilitação
-*   Clubes esportivos
-*   Empresas (fisioterapia do trabalho)
-*   Home care (atendimento domiciliar)
-*   Instituições de ensino e pesquisa
-*   Saúde pública (postos de saúde, SUS)
-*   Lares de idosos
+| Faixa de Preço (Mensalidade) | Valor Aproximado (R$) | Exemplos de Instituições (Geral) |
+| :--- | :--- | :--- |
+| **Até R$ 1.500,00** | R$ 430,00 a R$ 1.500,00 | Anhanguera, Unopar, Uninassau (com bolsas ou em polos EAD/semipresencial) [8]. |
+| **R$ 1.500,00 - R$ 3.000,00** | R$ 1.500,00 a R$ 3.000,00 | Estácio de Sá, Faculdades privadas de médio porte. |
+| **Acima de R$ 3.000,00** | R$ 3.000,00 ou mais | PUC-PR, Mackenzie, e outras universidades de maior prestígio ou em grandes centros urbanos [9]. |
 
-A demanda por fisioterapeutas tem crescido devido ao envelhecimento da população, ao aumento de doenças crônicas e à maior conscientização sobre a importância da reabilitação e prevenção. A busca por especializações e a atualização constante são cruciais para o desenvolvimento da carreira e para o acesso a melhores oportunidades.
+## 3. Grade Curricular e Conteúdo do Curso
 
-## 5. Faculdades de Fisioterapia no Paraná e no Brasil e Notas de Corte
+O curso de graduação em Fisioterapia tem duração média de **5 anos (10 semestres)**, embora algumas instituições possam oferecer em 4 anos [10]. A formação é ampla e combina disciplinas teóricas e práticas, preparando o estudante para atuar como um profissional generalista, crítico e humano [11].
 
-Diversas universidades no Brasil oferecem o curso de Fisioterapia, tanto públicas quanto privadas. As notas de corte para ingresso variam anualmente e dependem do processo seletivo (SISU, Prouni, FIES, vestibulares próprios) e da concorrência.
+### O que se estuda
 
-### 5.1. Notas de Corte no SISU (Sistema de Seleção Unificada)
+O currículo é dividido em ciclos, começando com a base das Ciências Biológicas e da Saúde, evoluindo para as áreas específicas da Fisioterapia e culminando em estágios supervisionados.
 
-O SISU utiliza a nota do ENEM para classificar os candidatos em universidades públicas. As notas de corte para Fisioterapia podem variar bastante entre as instituições e os anos. Em 2025, a nota de corte média para Fisioterapia no SISU foi de aproximadamente 715,22 pontos. Algumas das maiores notas de corte ficaram entre 724 e 757 pontos.
+| Ciclo | Disciplinas Principais (Exemplos) | Foco |
+| :--- | :--- | :--- |
+| **Básico** | Anatomia Humana, Fisiologia, Biologia Celular e Molecular, Bioquímica, Patologia, Farmacologia, Bioestatística, Saúde Pública. | Fundamentos do corpo humano, seus sistemas e as bases das doenças. |
+| **Específico** | Cinesiologia, Biomecânica, Avaliação em Fisioterapia, Eletroterapia, Fisioterapia Ortopédica e Traumatológica, Fisioterapia Respiratória, Fisioterapia Neurológica, Fisioterapia Desportiva, Terapia Manual. | Técnicas de avaliação, tratamento e reabilitação específicos para cada sistema. |
+| **Prático** | Estágios Supervisionados em diversas áreas (hospitalar, ambulatorial, saúde coletiva), Trabalho de Conclusão de Curso (TCC). | Aplicação prática dos conhecimentos em ambientes reais de trabalho. |
 
-**Exemplos de Notas de Corte (SISU):**
+## 4. Áreas de Atuação da Fisioterapia
 
-*   **UFPR (Universidade Federal do Paraná):** Uma das universidades mais conceituadas, com notas de corte competitivas. A menor nota de corte registrada para Fisioterapia na UFPR foi de 696,46 pontos.
-*   **UNIFESP (Universidade Federal de São Paulo):** Nota de corte de 725,48 pontos.
-*   **UFPE (Universidade Federal de Pernambuco):** Nota de corte de 724,61 pontos.
-*   **UEL (Universidade Estadual de Londrina):** Nota de corte de 727,24 pontos.
-*   **UFMG (Universidade Federal de Minas Gerais):** Nota de corte de 730,54 pontos.
-*   **USP (Universidade de São Paulo):** Registrou uma das maiores notas de corte, com 769,72 pontos.
+O fisioterapeuta possui um vasto leque de atuação, podendo trabalhar em hospitais, clínicas, consultórios, clubes esportivos, empresas, escolas, asilos, unidades básicas de saúde e, até mesmo, no domicílio do paciente.
 
-### 5.2. Notas de Corte no Prouni (Programa Universidade para Todos)
+| Área de Atuação | Descrição |
+| :--- | :--- |
+| **Fisioterapia Ortopédica e Traumatológica** | Reabilitação de lesões musculoesqueléticas, fraturas, entorses, luxações e pós-operatórios. |
+| **Fisioterapia Neurológica** | Tratamento de pacientes com doenças neurológicas (AVC, Parkinson, Lesão Medular, Paralisia Cerebral). |
+| **Fisioterapia Respiratória** | Prevenção e tratamento de disfunções pulmonares e respiratórias (asma, bronquite, DPOC, pós-COVID). |
+| **Fisioterapia Esportiva** | Prevenção e reabilitação de atletas, visando o retorno seguro ao esporte. |
+| **Fisioterapia Dermatofuncional** | Tratamento de disfunções estéticas e dermatológicas (queimaduras, pós-cirurgia plástica, celulite). |
+| **Fisioterapia do Trabalho** | Prevenção de lesões relacionadas ao trabalho (LER/DORT) e promoção da ergonomia. |
+| **Fisioterapia Pélvica** | Tratamento de incontinência urinária, disfunções sexuais e reabilitação pós-parto. |
+| **Fisioterapia em Terapia Intensiva (UTI)** | Atuação em unidades de terapia intensiva, auxiliando na manutenção da função cardiorrespiratória e motora de pacientes críticos. |
 
-O Prouni oferece bolsas de estudo em instituições privadas para estudantes de baixa renda. A nota de corte média para Fisioterapia no Prouni foi de aproximadamente 592,29 pontos. Em 2025, a média foi de 587,01 pontos.
+### Possibilidades de Especialização
 
-### 5.3. Notas de Corte no FIES (Fundo de Financiamento Estudantil)
+A especialização é um caminho importante para o crescimento profissional. O fisioterapeuta pode buscar **pós-graduações** *lato sensu* (especialização) ou *stricto sensu* (mestrado e doutorado), além de **cursos de extensão** e formação complementar em áreas específicas.
 
-O FIES financia cursos em instituições privadas. A nota de corte média para Fisioterapia pelo FIES em Curitiba-PR foi de 548,59 pontos.
+## 5. Mercado de Trabalho e Panorama Salarial para 2025
 
-**Exemplos de Notas de Corte (FIES em Curitiba-PR):**
+O mercado de trabalho para fisioterapeutas no Brasil é considerado **sólido e em expansão**, impulsionado pelo envelhecimento da população, o aumento de doenças crônicas e a crescente conscientização sobre a importância da prevenção e reabilitação [12]. A demanda é alta em áreas como Fisioterapia Respiratória (especialmente após a pandemia), Ortopédica e Neurológica.
 
-*   **UNIVERSIDADE TUIUTI DO PARANÁ:** 498,22 pontos.
-*   **FACULDADE SOCIESC DE CURITIBA:** Nota não especificada, mas dentro da média.
+### Média Salarial e Previsão para 2025
 
-### 5.4. Faculdades de Fisioterapia no Paraná
+O salário do fisioterapeuta varia conforme a região, a área de especialização, o tipo de vínculo empregatício (CLT, autônomo, concurso público) e o nível de experiência. Em 2025, a média salarial nacional tem girado em torno de **R$ 3.000,00 a R$ 3.500,00** para uma jornada de 30 a 31 horas semanais [13, 14].
 
-O estado do Paraná possui diversas instituições de ensino superior que oferecem o curso de Fisioterapia, tanto públicas quanto privadas. Algumas das mais conhecidas incluem:
+| Nível de Experiência | Faixa Salarial Aproximada (R$) em 2025 |
+| :--- | :--- |
+| **Recém-formado (0 a 1 ano)** | R$ 2.050,00 a R$ 3.000,00 |
+| **Júnior (1 a 3 anos)** | R$ 3.000,00 a R$ 4.000,00 |
+| **Pleno (3 a 5 anos)** | R$ 4.000,00 a R$ 5.500,00 |
+| **Sênior (Mais de 5 anos)** | R$ 5.500,00 a R$ 7.500,00 ou mais |
 
-*   **Universidade Federal do Paraná (UFPR):** Reconhecida pela excelência acadêmica e pesquisa.
-*   **Universidade Estadual de Londrina (UEL):** Outra instituição pública de destaque no estado.
-*   **Universidade Estadual de Maringá (UEM):** Oferece um curso de Fisioterapia bem avaliado.
-*   **Pontifícia Universidade Católica do Paraná (PUCPR):** Instituição privada com tradição e qualidade de ensino.
-*   **Universidade Positivo (UP):** Oferece o curso de Fisioterapia com boa infraestrutura.
-*   **Universidade Tuiuti do Paraná (UTP):** Mencionado nas notas de corte do FIES.
-*   **Faculdade Sociesc de Curitiba:** Também mencionada nas notas de corte do FIES.
+*Nota: Profissionais com especializações e que atuam em áreas de alta demanda (como Terapia Intensiva ou Fisioterapia Esportiva de alto rendimento) podem alcançar salários significativamente superiores.*
 
-É importante que os candidatos consultem os editais específicos de cada processo seletivo e instituição, pois as notas de corte podem variar anualmente e dependem de fatores como a modalidade de concorrência (ampla concorrência, cotas) e o número de vagas disponíveis.
+---
 
-## 6. Conclusão
+### Referências
 
-A profissão de fisioterapeuta é dinâmica e oferece um vasto campo de atuação, com demanda crescente e a possibilidade de especialização em diversas áreas. O ingresso na carreira requer formação superior e registro profissional, e as oportunidades de mercado são promissoras para profissionais qualificados e atualizados. As instituições de ensino no Paraná e em todo o Brasil oferecem cursos de alta qualidade, com notas de corte variadas que refletem a competitividade e o interesse pela área. A área.
-
+[1] Conselho Federal de Fisioterapia e Terapia Ocupacional (COFFITO). *Formação Acadêmica e Profissional*. (URL não disponível no snippet)
+[2] Wikipédia. *Fisioterapia*. (URL não disponível no snippet)
+[3] Unoeste. *O que o fisioterapeuta faz? Funções, áreas e mais*. (URL não disponível no snippet)
+[4] Unifagoc. *Por que o fisioterapeuta é essencial para a saúde?*. (URL não disponível no snippet)
+[5] Eniac. *Fisioterapeuta: o que é, função, atuação, salário e mais*. (URL não disponível no snippet)
+[6] Pravaler. *Descubra a nota de corte para Fisioterapia em 2024*. (URL não disponível no snippet)
+[7] Guia da Carreira. *Nota de Corte de Fisioterapia: pontuação no Enem para...*. (URL não disponível no snippet)
+[8] Guia da Carreira. *Conheça as faculdades mais baratas de Fisioterapia do...*. (URL não disponível no snippet)
+[9] Mackenzie. *Fisioterapia | Universidade Campus Higienópolis*. (URL não disponível no snippet)
+[10] Blog Uniderp. *Matérias de Fisioterapia: conheça a grade curricular desse...*. (URL não disponível no snippet)
+[11] São Camilo SP. *Graduação em Fisioterapia – São Camilo SP*. (URL não disponível no snippet)
+[12] Artmed. *Áreas da fisioterapia mais bem pagas em 2025*. (URL não disponível no snippet)
+[13] Portal Salário. *Fisioterapeuta - Salário Brasil*. (URL não disponível no snippet)
+[14] Moovicont. *Quanto ganha um fisioterapeuta em 2025*. (URL não disponível no snippet)
